@@ -1,0 +1,187 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+3:wght@400;600;800&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+font-family: 'Source Sans 3', sans-serif;
+font-weight: 400;
+}
+.flex-container{
+    display: flex;
+    flex-direction: column; /* Change to column to stack elements vertically */
+    width: 80%;
+    
+    padding: 20px;
+    height: 100vh;
+    align-items: center;
+}
+.small-flex-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    column-gap: 10px;
+    justify-content: center;
+    margin-top: 10px; /* Add margin to separate input area from h1 */
+    
+    align-items: center;
+}
+
+/* Additional styling for h1 and span */
+.top {
+    margin-bottom: 10px; /* Add margin to separate h1 from input area */
+    position: relative;
+}
+
+.top::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    margin-top: 5px;
+    background-color: green;
+    width: 0;
+    height: 4px;
+    transition: 0.475s all ease;
+    display: block;
+}
+
+.top:hover::after{
+    width: 100%;
+    left: 0;
+    background-color: green;
+}
+
+span.add {
+    padding: 14px 14px;
+    border-radius: 7px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    height: 95%;
+    user-select: none;
+    text-align: center;
+    transition: 0.3s all ease;
+}
+
+span.add:hover{
+    box-shadow: 0 0 10px #007bff;
+    transform: scale(1.01);
+
+}
+
+#input{
+    height: 95%;
+    padding: 14px;
+    font-family: 'Roboto', sans-serif;
+font-family: 'Source Sans 3', sans-serif;
+font-weight: 400;
+border: 3px solid black;
+border-radius: 7px;
+transition: 0.3s all ease;
+
+}
+#input:hover{
+    transform: scale(1.05);
+}
+
+.medium-flex-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    width: 80%;
+    border: 2px solid black;
+    box-shadow: 0 0 5px;
+    margin-top: 2rem;
+    overflow: auto;
+    height: 60vh;
+    padding: 5px;
+    border-radius: 7px;
+    
+    
+}
+
+/* media width 95 % */
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    width: 100%;
+    
+    margin-top: 2rem;
+    overflow: auto;
+    align-items: center;
+    padding: 5px;
+    
+    
+}
+@media (max-width: 600px) {
+    #input{
+        padding: 16px;
+        font-size: 18px;
+    }
+    span.add{
+        padding: 16px;
+    }
+    .medium-flex-container{
+        width: 115%;
+    }
+}
+li{
+    display: flex; 
+    overflow-wrap: anywhere;
+    flex-wrap: wrap;
+    white-space: break-spaces;
+    width: 80%;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-between;   
+    
+    padding: 12px 14px;
+    border: 3px solid black;
+    border-radius: 7px;
+    margin-bottom: 0.5rem;
+    user-select: none;
+    font-size: 1.25rem;
+    font-weight: 600;
+    transition: 0.475ms;
+    animation: animation1 1s ease-in-out 0.2ms;
+}
+
+span.close{
+    padding: 4px 14px;
+    margin-right: 5px;
+    margin-left: 5px;
+    border-radius: 50%;
+    background-color: #ED1D24;
+    color: white;
+    user-select: none;
+    text-decoration: none;
+}
+.checked:not(span.close){
+   color: #009A44;
+   text-decoration: line-through;
+}
+
+@keyframes animation1{
+    0%{
+        transform: scale(0.6);
+    }
+    40%{
+        transform: scale(1);
+    }
+    60%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}

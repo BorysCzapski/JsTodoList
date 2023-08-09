@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS To-Do list</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="code.js" defer></script>
+</head>
+<body>
+    <div class="flex-container">
+        <h1 style="text-align:center;" class="top">JS To-do list</h1><br>
+        <div class="small-flex-container">
+            <input id="input" placeholder="Title..." type="text">
+            <span class="add" onclick="addElement()">Add</span>
+        </div>
+        <div class="medium-flex-container">
+            <ul id="ul">
+                <li>First item </li>
+                <li class="checked">Second item </li>
+            </ul>
+        </div>
+        <p  style="color:grey" class="small">Borys Czapski &copy;2023</p>
+    </div>
+</body>
+</html>
