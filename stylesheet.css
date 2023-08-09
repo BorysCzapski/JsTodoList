@@ -9,7 +9,6 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    font-family: 'Roboto', sans-serif;
 font-family: 'Source Sans 3', sans-serif;
 font-weight: 400;
 }
@@ -46,19 +45,16 @@ span.add {
     transition: 0.3s all ease;
 }
 span.add:hover{
-    box-shadow: 0 0 10px #007bff;
-    transform: scale(1.01);
+    box-shadow: 0 0 10px #007bff;transform: scale(1.01);
 }
 #input{
 height: 95%;
 padding: 14px;
-font-family: 'Roboto', sans-serif;
 font-family: 'Source Sans 3', sans-serif;
 font-weight: 400;
 border: 3px solid black;
 border-radius: 7px;
 transition: 0.3s all ease;
-
 }
 #input:hover{
     transform: scale(1.05);
@@ -66,12 +62,10 @@ transition: 0.3s all ease;
 .medium-flex-container{
     display: flex;
     flex-direction: column;
-    row-gap: 12px;
     width: 80%;
     border: 2px solid black;
     box-shadow: 0 0 5px;
     margin-top: 2rem;
-    overflow: auto;
     height: 60vh;
     padding: 5px;
     border-radius: 7px;
