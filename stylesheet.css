@@ -10,7 +10,6 @@ body{
     align-items: center;
     min-height: 100vh;
 font-family: 'Source Sans 3', sans-serif;
-font-weight: 400;
 }
 .flex-container{
     display: flex;
@@ -23,7 +22,6 @@ font-weight: 400;
 .small-flex-container{
     display: flex;
     flex-direction: row;
-    width: 100%;
     column-gap: 10px;
     justify-content: center;
     margin-top: 10px; 
